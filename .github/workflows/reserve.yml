@@ -6,7 +6,7 @@ name: auto_Reserve
 # or API.
 on:
   schedule:
-    - cron: "57 59 06 ? * *" # 每天早上6:59:57启动（防止github action过于高负载）
+    - cron: "59 21 * * 0,1,2,3,4,5,6" # 每天早上5:59启动（防止github action过于高负载）
   workflow_dispatch:
   
 jobs:
